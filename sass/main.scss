@@ -9,7 +9,23 @@
 body {
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
-  padding: 6.375rem;
+}
+
+.btn {
+  &--pay {
+    background-color: #382AE1;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    height: 3.125rem;
+    width: 100%;
+  }
+
+  &--cancel {
+    background-color: transparent;
+    border: none;
+    color: #717FA6;
+  }
 }
 
 .attribution {
@@ -41,6 +57,7 @@ body {
 
   &__price-box {
     background-color: #F7F9FF;
+    border-radius: .4rem;
     height: 6.125rem;
   }
 
@@ -55,6 +72,8 @@ body {
 
 .wave {
   background: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
   color: #D6E1FF;
   height: 500px;
+  width: 100vw;
 }
