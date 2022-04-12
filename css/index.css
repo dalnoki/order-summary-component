@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-shadow: inherit;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 6.375rem;
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.4rem;
+  height: 43.56rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  width: 28.125rem;
+}
+.card__body {
+  padding: 3rem;
+}
+.card__image {
+  background-image: url(../images/illustration-hero.svg);
+  height: 13.75rem;
+}
+.card__price-box {
+  background-color: #F7F9FF;
+  height: 6.125rem;
+}
+.card__text {
+  padding: 1.25rem 2.81rem;
+}
+.card__title {
+  font-size: 1.75rem;
+}
+
+.wave {
+  background: url("../images/pattern-background-desktop.svg");
+  color: #D6E1FF;
+  height: 500px;
+}
+
+/*# sourceMappingURL=index.css.map */

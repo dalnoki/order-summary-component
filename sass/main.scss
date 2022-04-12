@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-shadow: inherit;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 6.375rem;
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: 11px; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: .4rem;
+  height: 43.56rem;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  width: 28.125rem ;
+
+  &__body {
+    padding: 3rem;
+  }
+
+  &__image {
+    background-image: url(../images/illustration-hero.svg);
+    height: 13.75rem;
+  }
+
+  &__price-box {
+    background-color: #F7F9FF;
+    height: 6.125rem;
+  }
+
+  &__text {
+    padding: 1.25rem 2.81rem;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+  }
+}
+
+.wave {
+  background: url("../images/pattern-background-desktop.svg");
+  color: #D6E1FF;
+  height: 500px;
+}
