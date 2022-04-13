@@ -3,26 +3,12 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-shadow: inherit;
+  box-sizing: inherit;
 }
 
 body {
   background-color: #e0e8ff;
   font-family: "Red Hat Display", sans-serif;
-}
-
-.btn--pay {
-  background-color: #382AE1;
-  border: none;
-  border-radius: 0.4rem;
-  color: white;
-  height: 3.125rem;
-  width: 100%;
-}
-.btn--cancel {
-  background-color: transparent;
-  border: none;
-  color: #717FA6;
 }
 
 .attribution {
@@ -34,11 +20,47 @@ body {
   color: #3e52a3;
 }
 
+.btn, .btn--pay, .btn--change, .btn--cancel {
+  background: none;
+  border: none;
+}
+.btn--cancel {
+  background-color: transparent;
+  color: #717FA6;
+}
+.btn--cancel:hover {
+  color: black;
+  font-weight: 900;
+}
+.btn--change {
+  color: #382AE1;
+  margin-left: 6rem;
+  text-decoration: underline;
+}
+.btn--change:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+.btn--pay {
+  background-color: #382AE1;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.8rem 1.25rem 0.2rem #b9b3f4;
+  color: white;
+  font-weight: 900;
+  height: 3.125rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.btn--pay:hover {
+  background-color: #766CF1;
+}
+
 .card {
   background-color: white;
-  border-radius: 0.4rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.7rem 2.5rem -1.4rem #0d30bd;
   height: 43.56rem;
-  margin: 0 auto;
+  margin: -26.7rem auto 0;
   overflow: hidden;
   text-align: center;
   width: 28.125rem;
@@ -50,21 +72,40 @@ body {
   background-image: url(../images/illustration-hero.svg);
   height: 13.75rem;
 }
+.card__price {
+  color: #717FA6;
+  display: block;
+  font-weight: 500;
+}
 .card__price-box {
   background-color: #F7F9FF;
   border-radius: 0.4rem;
-  height: 6.125rem;
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.card__price-box img {
+  height: 3rem;
+  margin-right: 1.4rem;
+}
+.card__price-box p {
+  color: #1F2E55;
+  font-weight: 900;
 }
 .card__text {
+  color: #717FA6;
+  font-weight: 500;
   padding: 1.25rem 2.81rem;
 }
 .card__title {
+  color: #1F2E55;
   font-size: 1.75rem;
+  font-weight: 900;
 }
 
 .wave {
   background: url("../images/pattern-background-desktop.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   color: #D6E1FF;
   height: 500px;
   width: 100vw;

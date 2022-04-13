@@ -3,29 +3,12 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-shadow: inherit;
+  box-sizing: inherit;
 }
 
 body {
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
-}
-
-.btn {
-  &--pay {
-    background-color: #382AE1;
-    border: none;
-    border-radius: .4rem;
-    color: white;
-    height: 3.125rem;
-    width: 100%;
-  }
-
-  &--cancel {
-    background-color: transparent;
-    border: none;
-    color: #717FA6;
-  }
 }
 
 .attribution {
@@ -37,14 +20,59 @@ body {
   }
 }
 
+.btn {
+  background: none;
+  border: none;
+
+  &--cancel {
+    @extend .btn;
+    background-color: transparent;
+    color: #717FA6;
+
+    &:hover {
+      color: black;
+      font-weight: 900;
+    }
+  }
+
+  &--change {
+    @extend .btn;
+    color: #382AE1;
+    margin-left: 6rem;
+    text-decoration: underline;
+
+    &:hover {
+      color: #766CF1;
+      text-decoration: none;
+    }
+  }
+
+  &--pay {
+    @extend .btn;
+    background-color: #382AE1;
+    border-radius: .7rem;
+    box-shadow: 0 .8rem 1.25rem .2rem hsl(245deg 75% 83%);
+    color: white;
+    font-weight: 900;
+    height: 3.125rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    &:hover {
+      background-color: #766CF1;
+    }
+  }
+}
+
 .card {
   background-color: white;
-  border-radius: .4rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.7rem 2.5rem -1.4rem #0d30bd;
   height: 43.56rem;
-  margin: 0 auto;
+  margin: -26.7rem auto 0;
   overflow: hidden;
   text-align: center;
-  width: 28.125rem ;
+  width: 28.125rem;
 
   &__body {
     padding: 3rem;
@@ -55,24 +83,46 @@ body {
     height: 13.75rem;
   }
 
+  &__price {
+    color: #717FA6;
+    display: block;
+    font-weight: 500;
+  }
+
   &__price-box {
     background-color: #F7F9FF;
     border-radius: .4rem;
-    height: 6.125rem;
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+
+    img {
+      height: 3rem;
+      margin-right: 1.4rem;
+    }
+
+    p {
+      color: #1F2E55;
+      font-weight: 900;
+    }
   }
 
   &__text {
+    color: #717FA6;
+    font-weight: 500;
     padding: 1.25rem 2.81rem;
   }
 
   &__title {
+    color: #1F2E55;
     font-size: 1.75rem;
+    font-weight: 900;
   }
 }
 
 .wave {
   background: url("../images/pattern-background-desktop.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   color: #D6E1FF;
   height: 500px;
   width: 100vw;
