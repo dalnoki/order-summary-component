@@ -23,6 +23,7 @@ body {
 .btn {
   background: none;
   border: none;
+  font-weight: 900;
 
   &--cancel {
     @extend .btn;
@@ -31,14 +32,13 @@ body {
 
     &:hover {
       color: black;
-      font-weight: 900;
     }
   }
 
   &--change {
     @extend .btn;
     color: #382AE1;
-    margin-left: 6rem;
+    margin-left: 5.5rem;
     text-decoration: underline;
 
     &:hover {
@@ -110,7 +110,7 @@ body {
   &__text {
     color: #717FA6;
     font-weight: 500;
-    padding: 1.25rem 2.81rem;
+    padding: 1.25rem 1.81rem;
   }
 
   &__title {
