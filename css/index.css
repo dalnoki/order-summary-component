@@ -7,22 +7,12 @@
 }
 
 body {
-  background-color: #e0e8ff;
   font-family: "Red Hat Display", sans-serif;
-  background: url("../images/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
+  background: #e0e8ff url("../images/pattern-background-desktop.svg") repeat-x;
   color: #D6E1FF;
   height: 500px;
+  padding-top: 6rem;
   width: 100vw;
-}
-
-.attribution {
-  padding-top: 1rem;
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: #3e52a3;
 }
 
 .btn, .btn--pay, .btn--change, .btn--cancel {
@@ -131,6 +121,15 @@ body {
   color: #1F2E55;
   font-size: 1.75rem;
   font-weight: 900;
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -17,15 +17,6 @@ body {
   width: 100vw;
 }
 
-.attribution {
-  padding-top: 1rem;
-  font-size: .7rem; text-align: center;
-
-  a {
-    color: hsl(228, 45%, 44%);
-  }
-}
-
 .btn {
   background: none;
   border: none;
@@ -143,5 +134,14 @@ body {
     color: #1F2E55;
     font-size: 1.75rem;
     font-weight: 900;
+  }
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: .7rem; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
   }
 }
