@@ -1,3 +1,5 @@
+@use 'abstracts/mixins' as *;
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,11 @@
 body {
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  color: #D6E1FF;
+  height: 500px;
+  width: 100vw;
 }
 
 .attribution {
@@ -38,8 +45,16 @@ body {
   &--change {
     @extend .btn;
     color: #382AE1;
-    margin-left: 5.5rem;
+    margin-left: 1rem;
     text-decoration: underline;
+
+    @include respond(xs) {
+      margin-left: 2rem;
+    }
+
+    @include respond(s) {
+      margin-left: 5.5rem;
+    }
 
     &:hover {
       color: #766CF1;
@@ -69,18 +84,25 @@ body {
   border-radius: 1.25rem;
   box-shadow: 0 0.7rem 2.5rem -1.4rem #0d30bd;
   height: 43.56rem;
-  margin: -25rem auto 0;
+  margin: 0 auto;
   overflow: hidden;
   text-align: center;
-  width: 28.125rem;
+  width: 90vw;
 
-  &__body {
-    padding: 3rem;
+  @include respond(s) {
+    width: 28.125rem;
   }
 
-  &__image {
-    background-image: url(../images/illustration-hero.svg);
-    height: 13.75rem;
+  img {
+    max-width: 100%;
+  }
+
+  &__body {
+    padding: 1.5rem;
+
+    @include respond(s) {
+      padding: 3rem;
+    }
   }
 
   &__price {
@@ -94,16 +116,21 @@ body {
     border-radius: .4rem;
     display: flex;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: .5rem;
+
+    @include respond(s) {
+      padding: 1.5rem;
+    }
 
     img {
       height: 3rem;
       margin-right: 1.4rem;
     }
 
-    p {
+    h1 {
       color: #1F2E55;
       font-weight: 900;
+      font-size: 1rem;
     }
   }
 
@@ -121,9 +148,5 @@ body {
 }
 
 .wave {
-  background: url("../images/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
-  color: #D6E1FF;
-  height: 500px;
-  width: 100vw;
+
 }

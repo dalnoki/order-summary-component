@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <!-- displays site properly based on user's device -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/index.css" media="screen" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+        <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+        <link href="css/index.css" media="screen" onload="this.media='all'" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+              rel="stylesheet">
 
-    <title>Frontend Mentor | QR code component</title>
+        <title>Frontend Mentor | QR code component</title>
 
-</head>
-<body>
-<div class="wave"></div>
-<main class="card">
-    <div class="card__header"><div class="card__image"></div></div>
-    <div class="card__body">
-    <h1 class="card__title">Order Summary</h1>
-    <div class="card__text">You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-    </div>
-    <div class="card__price-box">
-        <img src="images/icon-music.svg" alt="">
-        <p>Annual Plan
-        <span class="card__price">$59.99/year</span></p>
-        <button class="btn--change">Change</button>
-    </div>
-    <button class="btn--pay">Proceed to Payment</button>
-    <button class="btn--cancel">Cancel Order</button>
-    </div>
-</main>
-<footer>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">dalnoki</a>.
-    </div>
-</footer>
-</body>
+    </head>
+    <body>
+        <main class="card">
+            <img src="images/illustration-hero.svg" alt="">
+            <div class="card__body">
+                <h1 class="card__title">Order Summary</h1>
+                <p class="card__text">You can now listen to millions of songs, audiobooks, and podcasts on any
+                    device anywhere you like!
+                </p>
+                <div class="card__price-box">
+                    <img alt="" src="images/icon-music.svg">
+                    <h1>Annual Plan
+                        <span class="card__price">$59.99/year</span></h1>
+                    <button class="btn--change">Change</button>
+                </div>
+                <button class="btn--pay">Proceed to Payment</button>
+                <button class="btn--cancel">Cancel Order</button>
+            </div>
+        </main>
+        <footer>
+            <div class="attribution">
+                <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+                    Mentor</a>.
+                    Coded by <a href="#">dalnoki</a>.</p>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -9,11 +9,6 @@
 body {
   background-color: #e0e8ff;
   font-family: "Red Hat Display", sans-serif;
-  background: url("../images/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
-  color: #D6E1FF;
-  height: 500px;
-  width: 100vw;
 }
 
 .attribution {
@@ -39,18 +34,8 @@ body {
 }
 .btn--change {
   color: #382AE1;
-  margin-left: 1rem;
+  margin-left: 5.5rem;
   text-decoration: underline;
-}
-@media only screen and (min-width: 325px) {
-  .btn--change {
-    margin-left: 2rem;
-  }
-}
-@media only screen and (min-width: 460px) {
-  .btn--change {
-    margin-left: 5.5rem;
-  }
 }
 .btn--change:hover {
   color: #766CF1;
@@ -75,26 +60,17 @@ body {
   border-radius: 1.25rem;
   box-shadow: 0 0.7rem 2.5rem -1.4rem #0d30bd;
   height: 43.56rem;
-  margin: 0 auto;
+  margin: -26.7rem auto 0;
   overflow: hidden;
   text-align: center;
-  width: 90vw;
-}
-@media only screen and (min-width: 460px) {
-  .card {
-    width: 28.125rem;
-  }
-}
-.card img {
-  max-width: 100%;
+  width: 28.125rem;
 }
 .card__body {
-  padding: 1.5rem;
+  padding: 3rem;
 }
-@media only screen and (min-width: 460px) {
-  .card__body {
-    padding: 3rem;
-  }
+.card__image {
+  background-image: url(../images/illustration-hero.svg);
+  height: 13.75rem;
 }
 .card__price {
   color: #717FA6;
@@ -106,21 +82,15 @@ body {
   border-radius: 0.4rem;
   display: flex;
   margin-bottom: 2rem;
-  padding: 0.5rem;
-}
-@media only screen and (min-width: 460px) {
-  .card__price-box {
-    padding: 1.5rem;
-  }
+  padding: 1.5rem;
 }
 .card__price-box img {
   height: 3rem;
   margin-right: 1.4rem;
 }
-.card__price-box h1 {
+.card__price-box p {
   color: #1F2E55;
   font-weight: 900;
-  font-size: 1rem;
 }
 .card__text {
   color: #717FA6;
@@ -133,4 +103,12 @@ body {
   font-weight: 900;
 }
 
-/*# sourceMappingURL=index.css.map */
+.wave {
+  background: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  color: #D6E1FF;
+  height: 500px;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=style.css.map */
