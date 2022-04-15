@@ -10,9 +10,7 @@
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  background: url("../images/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
-  background-color: hsl(225, 100%, 94%);
+  background: hsl(225, 100%, 94%) url("../images/pattern-background-desktop.svg") repeat-x;
   color: #D6E1FF;
   height: 500px;
   padding-top: 6rem;
@@ -21,7 +19,7 @@ body {
 
 .attribution {
   padding-top: 1rem;
-  font-size: 11px; text-align: center;
+  font-size: .7rem; text-align: center;
 
   a {
     color: hsl(228, 45%, 44%);
