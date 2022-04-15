@@ -9,12 +9,13 @@
 }
 
 body {
-  background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
   background: url("../images/pattern-background-desktop.svg");
   background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
   color: #D6E1FF;
   height: 500px;
+  padding-top: 6rem;
   width: 100vw;
 }
 
@@ -145,8 +146,4 @@ body {
     font-size: 1.75rem;
     font-weight: 900;
   }
-}
-
-.wave {
-
 }
